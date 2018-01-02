@@ -10,7 +10,7 @@ module.exports = {
 
   fish2: {
     name: 'Lobster',
-    image: 'https://cdn.pixabay.com/photo/2016/03/02/13/50/seafood-platter-1232389_1280.jpg',
+    image: 'http://www.lobsters-online.com/catalog/media/Two-pound-lobster-plate-485.jpg',
     desc: 'These tender, mouth-watering beauties are a fantastic hit at any dinner party.',
     price: 3200,
     status: 'available'
@@ -18,7 +18,7 @@ module.exports = {
 
   fish3: {
     name: 'Sea Scallops',
-    image: 'http://i.istockimg.com/file_thumbview_approve/58624176/5/stock-photo-58624176-scallops-on-black-stone-plate.jpg',
+    image: 'https://images.food52.com/hV2Im-gL_HCaW9xCHt4TN_L64oM=/753x502/a068bc32-9616-4488-b462-7bcd37707316--hero.jpg',
     desc: 'Big, sweet and tender. True dry-pack scallops from the icey waters of Alaska. About 8-10 per pound',
     price: 1684,
     status: 'unavailable'
@@ -42,7 +42,7 @@ module.exports = {
 
   fish6: {
     name: 'Atlantic Salmon',
-    image: 'https://cdn.pixabay.com/photo/2014/12/08/15/07/salmon-560987_1280.jpg',
+    image: 'https://img.aws.livestrongcdn.com/ls-article-image-673/ds-photo/getty/article/144/37/484288192.jpg',
     desc: 'This flaky, oily salmon is truly the king of the sea. Bake it, grill it, broil it...as good as it gets!',
     price: 1453,
     status: 'available'
@@ -58,7 +58,7 @@ module.exports = {
 
   fish8: {
     name: 'Mussels',
-    image: 'https://cdn.pixabay.com/photo/2017/09/03/17/12/sauteed-mussels-2711241_1280.jpg',
+    image: 'http://www.tapasbonitas.com/tapas_mariscos/images-tapa0017/Mejillones_04_468x275.jpg',
     desc: 'The best mussels from the Pacific Northwest with a full-flavored and complex taste.',
     price: 425,
     status: 'available'
