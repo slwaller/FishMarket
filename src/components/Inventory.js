@@ -31,7 +31,25 @@ class Inventory extends React.Component {
   }
 
   authHandler(err, authData){
-
+    if(err){
+      console.log(err)
+      return
+    }
+    //grab store info
+    const storeRef = base.database().ref(this.props.storeId)
+    storeRef.once('value', (snapshot) =>{
+      const data = snapshot.val() || {}
+      
+      if(!data.owner){
+        storeRef.set({
+          owner: authData.user.uid
+        })
+      }
+      this.setState({
+        uid: authData.user.uid,
+        owner: data.owner || authData.user.uid
+      })
+    })
   }
 
   renderLogin(){
@@ -97,7 +115,8 @@ Inventory.propTypes = {
   updateFish: React.PropTypes.func.isRequired,
   removeFish: React.PropTypes.func.isRequired,
   addFish: React.PropTypes.func.isRequired,
-  loadSamples: React.PropTypes.func.isRequired
+  loadSamples: React.PropTypes.func.isRequired,
+  storeId: React.PropTypes.string.isRequired
 }
 
 export default Inventory
