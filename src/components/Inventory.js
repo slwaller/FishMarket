@@ -9,6 +9,7 @@ class Inventory extends React.Component {
     this.handleChange = this.handleChange.bind(this)
     this.renderLogin = this.renderLogin.bind(this)
     this.authenticate = this.authenticate.bind(this)
+    this.authHandler = this.authHandler.bind(this)
     this.state = {
       uid: null,
       owner: null
@@ -26,12 +27,12 @@ class Inventory extends React.Component {
   }
 
   authenticate(provider){
-    base.AuthWithOAuthPopup(provider, this.authHandler)
+    base.authWithOAuthPopup(provider, this.authHandler)
   }
 
-  // authHandler(err, authData){
-  //
-  // }
+  authHandler(err, authData){
+
+  }
 
   renderLogin(){
     return(
